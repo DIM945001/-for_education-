@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApp2.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Автомагазин ''Автозапчасти'' Окно Добавления новой записи" Height="275" Width="800" Closing="Window_Closing">
+    <Grid>
+
+        <Button x:Name="acceptbutton" Content="Подтвердить" HorizontalAlignment="Center" Margin="0,209,0,0" VerticalAlignment="Top" Click="acceptbutton_Click" Height="40" Width="174"/>
+        <TextBox HorizontalAlignment="Left" Margin="132,61,0,0" TextWrapping="Wrap" Text="{Binding PartName}" VerticalAlignment="Top" Width="120" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="132,104,0,0" TextWrapping="Wrap" Text="{Binding PartManufacturer}" VerticalAlignment="Top" Width="120" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="132,152,0,0" TextWrapping="Wrap" Text="{Binding Car}" VerticalAlignment="Top" Width="120" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="443,60,0,0" TextWrapping="Wrap" Text="{Binding CarModel}" VerticalAlignment="Top" Width="120" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="443,104,0,0" TextWrapping="Wrap" Text="{Binding img}" VerticalAlignment="Top" Width="120" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="443,152,0,0" TextWrapping="Wrap" Text="{Binding CategoryID}" VerticalAlignment="Top" Width="120" Height="26"/>
+        <TextBox HorizontalAlignment="Left" Margin="675,61,0,0" TextWrapping="Wrap" Text="{Binding Count}" VerticalAlignment="Top" Width="120" Height="30"/>
+        <TextBox HorizontalAlignment="Left" Margin="675,104,0,0" TextWrapping="Wrap" Text="{Binding PartCost}" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label Content="Наименование" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
+        <Label Content="Производитель" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top"/>
+        <Label Content="Марка Автомобиля" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top"/>
+        <Label Content="Модель Автомобиля" HorizontalAlignment="Left" Margin="314,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Расположение изображения" HorizontalAlignment="Left" Margin="274,104,0,0" VerticalAlignment="Top"/>
+        <Label Content="Категория запчасти" HorizontalAlignment="Left" Margin="314,152,0,0" VerticalAlignment="Top" Width="124"/>
+        <Label Content="Количество" HorizontalAlignment="Left" Margin="596,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Стоимость" HorizontalAlignment="Left" Margin="602,104,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
